@@ -4,7 +4,7 @@ const { test, expect } = require('@playwright/test');
 const {RegistrationPage} = require('../Pages/registrationPage')
 const {LoginPage} = require('../Pages/loginPage')
 
-test.skip('TestCase_1', async ({page}) => {
+test('TestCase_1', async ({page}) => {
     
     const mainP = new MainPage(page);
     await mainP.goToMainPage();
@@ -15,7 +15,7 @@ test.skip('TestCase_1', async ({page}) => {
     await registrationP.subButton();
 }); 
 
-test.skip('TestCase_2', async ({page}) => {
+test('TestCase_2', async ({page}) => {
 
     const mainP = new MainPage(page);
     await mainP.goToMainPage();
@@ -25,7 +25,7 @@ test.skip('TestCase_2', async ({page}) => {
     await registrationP.subButton();
 });
 
-test.skip('TestCase_3', async ({page}) => {
+test('TestCase_3', async ({page}) => {
 
     const mainP = new MainPage(page);
     await mainP.goToMainPage();
@@ -36,7 +36,7 @@ test.skip('TestCase_3', async ({page}) => {
     await registrationP.subButton();
 });
 
-test.skip('TestCase_4', async ({page}) => {
+test('TestCase_4', async ({page}) => {
 
     const mainP = new MainPage(page);
     await mainP.goToMainPage();

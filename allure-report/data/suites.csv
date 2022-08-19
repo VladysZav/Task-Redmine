@@ -1,8 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"skipped","Fri Aug 19 16:21:30 EEST 2022","Fri Aug 19 16:21:30 EEST 2022","3","chromium","Specs\spec.js","","","","TestCase_2",""
-"skipped","Fri Aug 19 16:21:30 EEST 2022","Fri Aug 19 16:21:30 EEST 2022","11","chromium","Specs\spec.js","","","","TestCase_1",""
-"passed","Fri Aug 19 11:44:10 EEST 2022","Fri Aug 19 11:44:24 EEST 2022","14054","webkit","Specs\spec.js","","","","TestCase_1",""
-"failed","Fri Aug 19 11:49:55 EEST 2022","Fri Aug 19 11:50:20 EEST 2022","24721","firefox","Specs\spec.js","","","","TestCase_1",""
-"passed","Fri Aug 19 16:21:30 EEST 2022","Fri Aug 19 16:21:49 EEST 2022","18415","chromium","Specs\spec.js","","","","TestCase_5",""
-"skipped","Fri Aug 19 16:21:30 EEST 2022","Fri Aug 19 16:21:30 EEST 2022","1","chromium","Specs\spec.js","","","","TestCase_3",""
-"skipped","Fri Aug 19 16:21:30 EEST 2022","Fri Aug 19 16:21:30 EEST 2022","1","chromium","Specs\spec.js","","","","TestCase_4",""
