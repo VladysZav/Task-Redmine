@@ -1,7 +1,6 @@
 const { expect } = require('@playwright/test');
 
 exports.RegistrationPage = class RegistrationPage {
-
     constructor(page) {
         this.page = page;
         this.userNameString = page.locator('[id="user_login"]');
@@ -12,7 +11,6 @@ exports.RegistrationPage = class RegistrationPage {
         this.emailString = page.locator('[id="user_mail"]');
         this.submitButton = page.locator('[name="commit"]');
     }
-
     async emailGenerator() {
         let chars = 'abcdefghijklmnopqrstuvwxyz';
         let string = '';
@@ -22,7 +20,6 @@ exports.RegistrationPage = class RegistrationPage {
         console.log(string + '@gmail.com');
         return string + '@gmail.com';       
     }
-
     async emailLargeGenerator() {
         let chars = 'abcdefghijklmnopqrstuvwxyz';
         let string = '';
@@ -32,7 +29,6 @@ exports.RegistrationPage = class RegistrationPage {
         console.log(string + '@gmail.com');
         return string + '@gmail.com';       
     }
-
     async textGenerator() {
         let chars = 'abcdefghijklmnopqrstuvwxyz';
         let string = '';
@@ -42,7 +38,6 @@ exports.RegistrationPage = class RegistrationPage {
         console.log(string);
         return string; 
     }
-
     async largeTextGenerator() {
         let chars = 'abcdefghijklmnopqrstuvwxyz';
         let string = '';
@@ -52,7 +47,6 @@ exports.RegistrationPage = class RegistrationPage {
         console.log(string);
         return string; 
     }
-
     async enterData() {
         await this.userNameString.fill(await this.textGenerator());
         await this.passwordString.fill("examplePassword");
@@ -61,7 +55,6 @@ exports.RegistrationPage = class RegistrationPage {
         await this.lastNameString.fill(await this.textGenerator());
         await this.emailString.fill(await this.emailGenerator());
     }
-
     async enterLargeData() {
         await this.userNameString.fill(await this.largeTextGenerator());
         await this.passwordString.fill("examplePassword");
@@ -70,7 +63,6 @@ exports.RegistrationPage = class RegistrationPage {
         await this.lastNameString.fill(await this.largeTextGenerator());
         await this.emailString.fill(await this.emailLargeGenerator());
     }
-
     async subButton() {
         await this.submitButton.click();
     }
