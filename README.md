@@ -1,6 +1,6 @@
 # Task-Redmine
 
-### There are 15 test cases in the autotests
+### There are 5 test cases in the autotests
 
 ### To get started, you must:
 ####  1. Copy this repository to your computer
